@@ -1,0 +1,77 @@
+# Law-OS Lite — Court Rules: New Mexico State Court
+# Source: NMRA Rules of Civil Procedure, NM Local Rules
+# These rules are MANDATORY — they cannot be overridden by firm style preferences.
+# Every firm filing in NM state court must comply with these rules.
+
+jurisdiction: "NM State Court"
+jurisdiction_code: "nm-state"
+source: "NMRA Rules of Civil Procedure; NM Local Rules"
+
+page_setup:
+  paper_size: "Letter"
+  paper_dxa: { width: 12240, height: 15840, code: 1 }  # US Letter — NEVER A4
+  margins_dxa: { top: 1440, bottom: 1440, left: 1440, right: 1440 }  # 1-inch all sides
+  margins_inches: { top: "1in", bottom: "1in", left: "1in", right: "1in" }
+  line_spacing: "double"
+  line_spacing_dxa: 480  # 480 = double, auto
+  page_numbers:
+    position: "bottom-center"
+    footer_dxa: 432  # NEVER 708
+
+caption:
+  alignment: "left"  # NM state court = left-aligned
+  bold: false  # Caption is NOT bold
+  case_number_format: "D-"  # State district format (e.g., D-202-CV-2026-00001)
+  spacing_after_dxa: 0  # No extra spacing between caption lines
+  line_spacing_dxa: 240  # Single-spaced within caption
+  table_borders: "nil"  # NIL at table level — NOT "none" or "single"
+
+certificate_of_service:
+  required: true  # Required on all court filings
+  separate_for_discovery_responses: true  # COS is a separate document for discovery responses
+  title_style: "bold, underlined, centered"
+
+section_headings:
+  numbering_method: "w:numPr"  # Word multilevel numbering — NOT inline text
+  levels:
+    - { level: 1, format: "I.", style: "Heading 1" }
+    - { level: 2, format: "A.", style: "Heading 2" }
+    - { level: 3, format: "1.", style: "Heading 3" }
+    - { level: 4, format: "a.", style: "Heading 4" }
+
+font_constraints:
+  minimum_size: "12pt"
+  minimum_size_half_points: 24  # 12pt = 24 half-points
+
+discovery:
+  response_structure:
+    # CRITICAL: Response-first order per NM practice
+    - "request_text"
+    - "RESPONSE (substantive answer FIRST)"
+    - "Notwithstanding this answer, Plaintiff objects as follows:"
+    - "objection_text"
+    - "withholding_statement"
+  numbered_items_method: "w:numPr"  # Word numbered lists — NOT inline text
+  interrogatory_format: "INTERROGATORY NO. %1:"
+  rfp_format: "REQUEST FOR PRODUCTION NO. %1:"
+  rfa_format: "REQUEST FOR ADMISSION NO. %1:"
+  topic_format: "Topic %1:"
+  no_cos_on_responses: true  # Responses are served but NOT filed — no COS needed
+
+authority_hierarchy:
+  # NM-first citation hierarchy
+  primary:
+    - "NMSA 1978 (statutes)"
+    - "NMRA (rules)"
+    - "UJI (uniform jury instructions)"
+    - "NMSC / NMCOA (neutral cites with paragraph pins)"
+  secondary:
+    - "U.S.C. (federal statutes)"
+    - "FRCP / FRE (federal rules)"
+    - "SCOTUS"
+    - "10th Circuit"
+    - "D.N.M."
+
+record_discipline:
+  every_material_fact_must_cite: true
+  cite_format: "Bates or exhibit cite"

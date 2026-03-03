@@ -1,0 +1,93 @@
+# Law-OS Lite — Firm Style: Generic (Default)
+# Default style for firms that haven't configured their own preferences.
+# Uses universally accepted formatting conventions.
+# Court rules from shared/court-rules/ always take priority over firm style.
+
+style_name: "Generic (Default)"
+style_code: "generic-style"
+
+fonts:
+  body:
+    family: "Times New Roman"
+    size: "12pt"
+    size_half_points: 24
+    rFonts: { ascii: "Times New Roman", hAnsi: "Times New Roman", eastAsia: "Times New Roman", cs: "Times New Roman" }
+  heading:
+    family: "Times New Roman"
+    size: "14pt"
+    size_half_points: 28
+    weight: "bold"
+    rFonts: { ascii: "Times New Roman", hAnsi: "Times New Roman", eastAsia: "Times New Roman", cs: "Times New Roman" }
+  footnote:
+    family: "Times New Roman"
+    size: "10pt"
+    size_half_points: 20
+    spacing: "single"
+    spacing_after_dxa: 100
+    rFonts: { ascii: "Times New Roman", hAnsi: "Times New Roman", eastAsia: "Times New Roman", cs: "Times New Roman" }
+  footer:
+    family: "Times New Roman"
+    size: "10pt"
+    size_half_points: 20
+    color: "#000000"
+    rFonts: { ascii: "Times New Roman", hAnsi: "Times New Roman", eastAsia: "Times New Roman", cs: "Times New Roman" }
+
+doc_defaults:
+  font_family: "Times New Roman"
+  font_size: "12pt"
+  font_size_half_points: 24
+
+typography:
+  smart_quotes: false
+  em_dashes: false
+  all_caps: false
+
+alignment:
+  body: "justified"
+  headings: "left"
+  titles: "centered"
+  cos_title: "centered"
+
+emphasis:
+  bold_usage: "Key legal conclusions, dispositive phrases, rule text"
+  bold_never: "Transitional words"
+  italic_usage: "Case names, terms of art on first use"
+  underline_usage: "Exhibit references"
+
+letterhead:
+  enabled: false
+  title_pg: false
+
+signature:
+  style: "Normal"
+  attorney_for_italic: true
+  spacing_after_dxa: 0
+
+pleadings:
+  opening_paragraph_indent_dxa: 540
+  page_break_after_opening: false
+  bold_headings_via_style: true
+
+letters:
+  body_spacing: "single"
+  body_spacing_after_dxa: 240
+  transmission_line:
+    format: "Via Email to [email]"
+    style: "bold"
+  salutation: "Sincerely,"
+
+discovery:
+  firm_originated_font: "Times New Roman"
+  oc_form_font: "Times New Roman"
+  proposed_orders_font: "Times New Roman"
+
+prose:
+  paragraph_format: true
+  numbered_lists_rare: true
+  max_bullet_words: 24
+  heading_max_words: 12
+  avoid_block_quotes: true
+
+tables:
+  border_style: "nil"
+  column_widths: "DXA"

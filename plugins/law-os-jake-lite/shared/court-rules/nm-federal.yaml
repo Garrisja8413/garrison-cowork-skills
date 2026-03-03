@@ -1,0 +1,74 @@
+# Law-OS Lite — Court Rules: New Mexico Federal Court (D.NM / 10th Circuit)
+# Source: FRCP, D.NM Local Rules, 10th Circuit Rules
+# These rules are MANDATORY — they cannot be overridden by firm style preferences.
+
+jurisdiction: "D.NM Federal Court / 10th Circuit"
+jurisdiction_code: "nm-federal"
+source: "FRCP; D.NM Local Rules; 10th Circuit Rules"
+
+page_setup:
+  paper_size: "Letter"
+  paper_dxa: { width: 12240, height: 15840, code: 1 }  # US Letter — NEVER A4
+  margins_dxa: { top: 1440, bottom: 1440, left: 1440, right: 1440 }  # 1-inch all sides
+  margins_inches: { top: "1in", bottom: "1in", left: "1in", right: "1in" }
+  line_spacing: "double"
+  line_spacing_dxa: 480
+  page_numbers:
+    position: "bottom-center"
+    footer_dxa: 432  # NEVER 708
+
+caption:
+  alignment: "center"  # Federal court = centered caption
+  bold: false
+  case_number_format: "Cv-"  # Federal format (e.g., Cv-2026-00001, 1:26-cv-00001, 2:26-cv-00001)
+  spacing_after_dxa: 0
+  line_spacing_dxa: 240
+  table_borders: "nil"
+
+certificate_of_service:
+  required: true
+  separate_for_discovery_responses: true
+  title_style: "bold, underlined, centered"
+
+section_headings:
+  numbering_method: "w:numPr"
+  levels:
+    - { level: 1, format: "I.", style: "Heading 1" }
+    - { level: 2, format: "A.", style: "Heading 2" }
+    - { level: 3, format: "1.", style: "Heading 3" }
+    - { level: 4, format: "a.", style: "Heading 4" }
+
+font_constraints:
+  minimum_size: "12pt"
+  minimum_size_half_points: 24
+
+discovery:
+  response_structure:
+    - "request_text"
+    - "RESPONSE (substantive answer FIRST)"
+    - "Notwithstanding this answer, Plaintiff objects as follows:"
+    - "objection_text"
+    - "withholding_statement"
+  numbered_items_method: "w:numPr"
+  interrogatory_format: "INTERROGATORY NO. %1:"
+  rfp_format: "REQUEST FOR PRODUCTION NO. %1:"
+  rfa_format: "REQUEST FOR ADMISSION NO. %1:"
+  topic_format: "Topic %1:"
+  no_cos_on_responses: true
+
+authority_hierarchy:
+  # Federal-first citation hierarchy for D.NM filings
+  primary:
+    - "U.S.C. (federal statutes)"
+    - "FRCP / FRE (federal rules)"
+    - "SCOTUS"
+    - "10th Circuit"
+    - "D.N.M. (local rules and precedent)"
+  secondary:
+    - "NMSA 1978 (when applying state substantive law)"
+    - "NMRA (state procedural rules, if relevant)"
+    - "NMSC / NMCOA (state case law)"
+
+record_discipline:
+  every_material_fact_must_cite: true
+  cite_format: "Bates or exhibit cite"

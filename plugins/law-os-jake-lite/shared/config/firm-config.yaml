@@ -1,0 +1,16 @@
+firm:
+  name: "Jake Practice"
+  short_name: "Jake"
+  address: ""
+  phone: ""
+  email: ""
+
+jurisdiction:
+  primary: "nm-state"
+  secondary: "nm-federal"
+
+style:
+  active: "generic-style"
+
+defaults:
+  attorney_profile: "jake"

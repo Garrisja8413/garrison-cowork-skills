@@ -1,0 +1,10 @@
+PLACEHOLDER: Place the firm letterhead image file here.
+
+Expected file: letterhead.png
+Recommended: 6.5 inches wide, 300 DPI, PNG format
+
+The actual letterhead image should be provided by the firm and placed
+in this directory as "letterhead.png". Image binaries are not committed
+to the repository — this placeholder documents the expected location.
+
+See README.md in this directory for embedding instructions.
