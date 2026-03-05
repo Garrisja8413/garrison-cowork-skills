@@ -1,0 +1,13 @@
+﻿{
+  "name": "garrison-cowork-skills",
+  "owner": {
+    "name": "Jake Garrison"
+  },
+  "plugins": [
+    {
+      "name": "law-os-jake-lite",
+      "source": "./plugins/law-os-jake-lite",
+      "description": "Litigation workflow plugin with 40+ pack-first skills for NM state and federal practice."
+    }
+  ]
+}
