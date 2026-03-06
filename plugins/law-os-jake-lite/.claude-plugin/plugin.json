@@ -1,6 +1,6 @@
 {
   "name": "law-os-jake-lite",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Litigation workflow plugin with 40 pack-first skills covering intake, fact extraction, discovery, depositions, motions, pleadings, demand letters, settlement strategy, and trial briefs. Built for NM state and federal practice.",
   "author": {
     "name": "Jake"
