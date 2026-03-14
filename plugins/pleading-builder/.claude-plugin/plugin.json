@@ -1,0 +1,9 @@
+{
+  "name": "pleading-builder",
+  "version": "1.0.0",
+  "description": "Template-driven pleading drafter for routine court filings.",
+  "author": {
+    "name": "The Garrison Law Firm, LLC"
+  },
+  "keywords": ["legal", "pleading", "docx", "court-filing", "new-mexico"]
+}
